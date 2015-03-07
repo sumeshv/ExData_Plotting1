@@ -7,9 +7,8 @@
 # the txt file is kept under D:/R/data/exdata-data-household_power_consumption
 #
 
-source("data_plot.R")
-
 plot2 <-function(dir){  
+  source("data_plot.R")
   ds <- get_data(dir)
   png("plot2.png", width=480, height=480)  
   plot(ds$Time, ds$Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)")
