@@ -8,11 +8,10 @@
 # the txt file is kept under D:/R/data/exdata-data-household_power_consumption
 #
 
-# Including a common R file which has got the logic to load the data and this
-# will be re-used to draw all graphs in this prject
-source("data_plot.R")
-
 plot1 <-function(dir){ 
+  # Including a common R file which has got the logic to load the data and this
+  # will be re-used to draw all graphs in this prject
+  source("data_plot.R")
   # this function is available in data_plot.R
   ds <- get_data(dir)
   png(filename = "plot1.png", width = 480, height = 480, units = "px", bg = "white")
