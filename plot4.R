@@ -10,7 +10,8 @@
 
 source("data_plot.R")
 
-plot4 <-function(dir){  
+plot4 <-function(dir){ 
+  source("data_plot.R")
   ds <- get_data(dir)
   png("plot4.png", width=480, height=480)
   par(mfrow=c(2,2))
