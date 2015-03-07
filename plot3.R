@@ -8,9 +8,8 @@
 # the txt file is kept under D:/R/data/exdata-data-household_power_consumption
 #
 
-source("data_plot.R")
-
-plot3 <-function(dir){  
+plot3 <-function(dir){ 
+  source("data_plot.R")
   ds <- get_data(dir)
   png("plot3.png", width=480, height=480)     
   plot(ds$Time, ds$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering",col="black")
